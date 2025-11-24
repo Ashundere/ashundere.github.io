@@ -1,15 +1,121 @@
-
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 .header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    color: hsl(255, 11%, 22%);
+}
+.header h5:hover{
+    color:black;
 }
 .front-header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
     flex-direction: row;
 }
 .front-header img{
-    
+    width: 30%;
+    height: auto;
+}
+
+.back-header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+}
+.back-header button{
+    width: 80px;
+    height: 30px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 15px;
+    border-color: hsl(180, 66%, 49%);
+    color:white;
+}
+
+.back-header button:hover{
+    background-color: rgb(157, 243, 243);
+}
+
+.back-header img{
+    display:none;
+    width:10%;
+    height: auto;
+}
+.dropdown-content{
+    display:none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.CTA{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.CTA img {
+    grid-column-start: 2;
+    justify-self: end;
+    width:90%;
+    height:auto;
+}
+.CTA-front {
+    align-items: start;
+}
+
+.CTA h1{
+    font-size: 50px;
+    color:hsl(260, 8%, 14%);
+}
+
+.CTA p {
+    font-size: 20px;
+    color: hsl(257, 7%, 63%);
+}
+.CTA button {
+    width: 100px;
+    height: 30px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 15px;
+    border-color: hsl(180, 66%, 49%);
+    color:white;
+}
+.CTA button:hover{
+    background-color: rgb(157, 243, 243);
+}
+
+@media (max-width: 500px) {
+    body{
+        margin: 10px ;
+    }
+    .header h5{
+        display: none;
+    }
+    .header button {
+        display:none
+    }
+    .back-header img{
+        display:block;
+    }
+
+    .CTA {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .CTA img{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .CTA-front{
+        grid-row-start: 2;
+        text-align: center;
+    }
+
 }
