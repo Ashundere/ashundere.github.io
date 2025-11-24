@@ -1,0 +1,15 @@
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.front-header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.front-header img{
+    
+}
