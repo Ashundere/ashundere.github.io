@@ -1,8 +1,15 @@
 body{
-    margin-left: 100px;
-    margin-right: 100px;
+    background-color: hsl(0, 0%, 96%);
 }
 
+.upper-body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    gap: 30px;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -91,6 +98,166 @@ body{
     background-color: rgb(157, 243, 243);
 }
 
+.shorten-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    width: auto;
+    gap: 15px;
+    padding: 10px;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-size: cover ;
+    border-radius: 10px;
+}
+.shorten-bar input{
+    height: 30px;
+    width: 75%;
+    align-self: center;
+    border-radius: 5px;
+}
+.shorten-bar input:focus:invalid{
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.shorten-bar button{
+    width: 100px;
+    height: 30px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 15px;
+    border-color: hsl(180, 66%, 49%);
+    color:white;
+    align-self: center;
+}
+.shorten-bar button:hover{
+    background-color: rgb(157, 243, 243);
+}
+
+.statistics{
+    max-width: 350px;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.statistics h1{
+    color:hsl(260, 8%, 14%);
+}
+
+.statistics p{
+    color:hsl(257, 7%, 63%);
+    
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+}
+.brand{
+    align-self: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width:auto;
+    height: 250px;
+}
+
+.brand img{
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    width: 40px;
+}
+.brand p{
+    color:hsl(257, 7%, 63%);
+}
+.records{
+    align-self: center;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width:auto;
+    height: 250px;
+}
+.records img{
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    width: 40px;
+}
+.records p{
+    color:hsl(257, 7%, 63%);
+}
+.customizable{
+    align-self: flex-end;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width:auto;
+    height: 250px;
+}
+.customizable img{
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    width: 40px;
+
+}
+
+.customizable p{
+    color:hsl(257, 7%, 63%);
+}
+.boost-bar{
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+    align-items: center;
+    justify-content: center;
+    height: 175px;
+    width: 100%;
+    background-color: hsl(257, 27%, 26%);
+    color: white;
+    background-image: url(images/bg-boost-desktop.svg);
+    background-size: cover ;
+}
+
+.boost-bar button{
+    width: 100px;
+    height: 30px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 15px;
+    border-color: hsl(180, 66%, 49%);
+    color:white;
+    align-self: center;
+}
+.boost-bar button:hover{
+    background-color: rgb(157, 243, 243);
+}
+.footer{
+    background-color:hsl(260, 8%, 14%) ;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    width:100%;
+}
+.footer p{
+    color:hsl(0, 0%, 75%);
+}
+.footer p:hover{
+    color:hsl(180, 66%, 49%);
+}
+.icons{
+    margin-top:20px;
+}
+.icons img:hover{
+    background-color:hsl(180, 66%, 49%) ;
+}
 @media (max-width: 500px) {
     body{
         margin: 10px ;
@@ -100,6 +267,10 @@ body{
     }
     .header button {
         display:none
+    }
+    .front-header img{
+        width:110%;
+        justify-self: flex-end;
     }
     .back-header img{
         display:block;
@@ -112,10 +283,39 @@ body{
     .CTA img{
         grid-row-start: 1;
         grid-column-start: 1;
+        width:150%;
+        place-self: center;
     }
     .CTA-front{
         grid-row-start: 2;
         text-align: center;
+    }
+    .shorten-bar{
+        background-image: url(images/bg-shorten-mobile.svg);
+        background-size: cover ;
+        flex-direction: column;
+    }
+    .statistics{
+    max-width: 350px;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .icons{
+        margin-bottom: 20px;
     }
 
 }
