@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -47,8 +48,9 @@
       <img src="images/illustration-working.svg" alt="image of a person sitting at a desk with a computer">
     </div>
     <div class="shorten-bar">
-      <input type="text" placeholder="Shorten a link here..." required>
-      <button class="shorten-btn">Shorten It!</button>
+      <input type="text" id="url-input" placeholder="Shorten a link here..." required>
+      <button class="shorten-btn" id="shorten-btn">Shorten It!</button>
+      <span id="url-input-error"></span>
     </div>
     <div class="link-list" id="link-list" style="display: none;">
     </div>

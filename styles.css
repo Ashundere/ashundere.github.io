@@ -163,6 +163,12 @@ body{
     background-color: rgb(157, 243, 243);
 }
 
+#url-input-error{
+    color:crimson;
+    position: relative;
+    right:1000px;
+    top:75%;
+}
 .statistics{
     max-width: 350px;
     height: auto;
