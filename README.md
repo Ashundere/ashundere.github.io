@@ -8,8 +8,11 @@ Using Bitly API, this page will take a given input URL and shorten it to a Bitly
 
 ## Getting Started
 
+### Link
+https://ashundere.github.io/
+
 ### Dependencies
-node.js: https://nodejs.org/en
+None!
 
 ### Authors
 
